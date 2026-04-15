@@ -1,0 +1,21 @@
+# Ignore VS Code settings and Copilot files
+.vscode/
+.copilot/
+
+# Ignore system/user folders that got picked up
+AppData/
+Desktop/
+Documents/
+Downloads/
+Music/
+Pictures/
+Videos/
+OneDrive/
+NTUSER.*
+
+# Ignore logs
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
