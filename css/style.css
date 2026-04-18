@@ -111,7 +111,7 @@ main {
 }
 
 .second-section p {
-  font-size: 20;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -123,7 +123,6 @@ main {
 }
 
 .computer {
-  width: 50%;
   object-fit: contain;
   margin-left: -5%;
 }
@@ -272,37 +271,130 @@ footer {
   height: 1.5rem;
 }
 
-@media (max-width: 768px) {
-  .hero {
-    background-image: url("../assets/bg-header-mobile.png");
+@media (max-width: 420px) {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  margin-bottom: 2rem;
+}
+
+.hero-text p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.second-section h2 {
+  font-size: 33px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.second-section p {
+  text-align: center;
+  font-size: 18px;
+  margin: 1rem 1rem;
+}
+
+
+.third-section {
+  flex-direction: column;
+  gap: 3rem;
+  overflow-x: hidden;
+}
+
+.computer {
+  width: 100%;
+  overflow: hidden;
+  object-fit: contain;
+  margin: 0;
+}
+
+ .computer img {
+    width: 90%;
     height: auto;
-    padding: 4rem 1rem;
+    margin: 0 1rem;
+    object-fit: contain;
   }
 
-  .hero-content {
-    padding-top: 0;
-  }
+.feature-list {
+  width: 100%;
+  align-items: center;
+  margin-bottom: 2rem;
+}
 
-  .hero-text h1 {
-    font-size: 28px;
-  }
+.feature-list h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.feature-list p {
+  text-align: center;
+}
 
-  .second-section h2 {
-    font-size: 24px;
-  }
+.devices {
+  width: 90%;
+}
 
-  .third-section {
-    flex-direction: column;
-    gap: 3rem;
-    align-items: center;
-  }
+.fourth-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.feature-card{
+  width: 100%;
+  align-items: center;
+}
 
-  .computer {
-    width: 80%;
-    margin-left: -10%;
-  }
+.feature-card  p {
+  text-align: center;
+}
 
-  .feature-list {
-    width: 100%;
-    margin-top: 2rem;
-  }
+.logo-section {
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-logo img {
+  margin-left: 0;
+}
+
+.footer-links{
+  margin: 2rem 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-right: 0;
+}
+
+}
